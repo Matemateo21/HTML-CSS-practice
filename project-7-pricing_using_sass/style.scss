@@ -1,0 +1,108 @@
+$dark: #171717;
+$light: #ebe8e8;
+$font-stack: sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: $font-stack;
+  background-color: $dark;
+  color: $light;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+}
+.info {
+  text-align: center;
+  p {
+    margin: 50px 20px;
+  }
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 10000px;
+  align-items: center;
+  
+  .box {
+    min-height: 400px;
+    border: 3px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+    &:first-of-type {
+       right: -3px; 
+    }
+    &:last-of-type {
+        left: -3px;
+    }
+
+    &__title {
+      font-size: 40px;
+      margin: 50px 0 0 0;
+    }
+    &__price {
+      font-weight: bold;
+      font-size: 30px;
+      margin: 30px 0;
+    }
+    &__description {
+      margin: 0 30px;
+    }
+    &__button {
+      padding: 8px 20px;
+      background-color: $light;
+      border: none;
+      margin-bottom: 70px;
+    }
+    &--featured {
+        min-height: 107%;
+        min-width: 250px;
+      background-color: $light;
+      color: $dark;
+      box-shadow: -20px 0 25px -15px rgba(255, 255, 255, 0.3),
+      20px 0 25px -15px rgba(255, 255, 255, 0.3);
+      &::before {
+          content: "";
+          width: 97%;
+          height: 98.5%;
+          position: absolute;
+          border: 3px solid $dark;
+      }
+      &::after {
+          content: 'most popular';
+          
+          height: 20px;
+          background-color: $dark;
+          color: $light;
+          position: absolute;
+          padding: 0 5px;
+          font-size: 10px;
+          line-height: 20px;
+
+      }
+    }
+    .box__button {
+        background-color: $dark;
+        border: 1px solid black;
+        color:$light;
+
+      }
+      .box__title {
+        font-size: 50px;
+      }
+      .box__description {
+        font-size: 20px;
+      }
+
+    }
+  }
+
