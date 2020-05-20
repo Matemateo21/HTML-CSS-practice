@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: grey;
+  font-family: "Fira Code", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.logo {
+  font-size: large;
+}
+.navigation,
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  height: 50px;
+  padding: 5px 20px;
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu__item {
+  margin-left: 40px;
+}
+
+.form-box {
+  width: 350px;
+
+  padding: 55px 50px;
+  border: 2px solid white;
+  text-align: center;
+    border-radius: 5px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form-box h1 {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+.form-box p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: rgb(202, 196, 196);
+}
+.form-box label {
+  font-size: 10px;
+}
+form > input {
+  background-color: transparent;
+  color: white;
+    border: none;
+  border-bottom: 1px solid white;
+  width: 70%;
+  margin: 10px 0;
+}
+
+form button {
+    background-color: black;
+    border: 1px solid rgb(49, 41, 41);
+    padding: 10px 20px;
+    margin: 10px 0;
+    color: white;
+    border-radius: 50px;
+}
+
+label {
+    color: rgb(197, 195, 195);
+}
